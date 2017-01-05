@@ -10,4 +10,4 @@ This project is destinated for doc my experiences.
 
 ### Algorithms
 
-1.[Two Sum](algo/2sum)
+1. [Two Sum](algo/2sum)

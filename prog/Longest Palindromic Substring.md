@@ -2,9 +2,12 @@
 title: Longest Palindromic Substring
 category: Programming
 ---
-Todo...
 ## Description
+Todo...
+
 ## Methodology
+Todo...
+
 ## Source Code
 ```C++
 class Solution {

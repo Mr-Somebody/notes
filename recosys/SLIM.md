@@ -19,6 +19,8 @@ To get \\(\\hat{A}\\), we need to calculate the matrix \\(W\\), which is the opt
 ## optimzation function
 The optimization function of SLIM is formalized as below:
 
-\\[\\mathop{minimize}\\limits\_{W}\\quad\\frac{1}{2}\|\|A-AW\|\|_{F}^{2}+\\frac{\\beta}{2}\|\|W\|\|_{F}^{2}+\\lambda\|\|W\|\|_{1}\\]
+\\[\\mathop{minimize}\\limits\_{W}\\quad\\frac{1}{2}\|\|A-AW\|\|\_{F}^{2}+\\frac{\\beta}{2}\|\|W\|\|\_{F}^{2}+\\lambda\|\|W\|\|\_{1}\\]
 
-\\[subject\\quad to\\quad W\\]
+\\[subject\\quad to\\quad W \\ge 0, \\quad\\quad diag(W)=0\\]
+
+where \\( \|\|W\|\|\_{1}=\\sum^{n}\_{i=1}\\sum^{n}\_{j=1}\|w\_{ij}\|\\) is entry-wise \\(l\_{1}-norm\\) of \\(W\\), which is used to introduce sparsity into the solutions. \\(\\frac{\\beta}{2}\|\|W\|\|\_{F}^{2}\\) is the \\(l\_{F}-norm\\) of \\(W\\), which is used to reduce the complexity of the model and prevents overfitting.

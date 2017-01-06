@@ -29,9 +29,8 @@ where \\( \|\|W\|\|\_{1}=\\sum^{n}\_{i=1}\\sum^{n}\_{j=1}\|w\_{ij}\|\\) is entry
 Since the columns of \\(W\\) are independent, we can calculate each column of \\(W\\) parellel. The optimization problem can be transform to the follow form:
 
 \\[
-\\begin{equation}
 \\mathop{minimize}\\limits\_{w\_{j}}\\quad\\frac{1}{2}\|\|a\_{j}-Aw\_{j}\|\|\_{2}^{2}+\\frac{\\beta}{2}\|\|w\_{j}\|\|\_{2}^{2}+\\lambda\|\|w\_{j}\|\|\_{1}
-\\end{equation}
+\\eqno{(1)}
 \\]
 
 \\[subject\\quad to\\quad w\_{j} \\ge 0, \\quad\\quad diag(w\_{i,j})=0\\]

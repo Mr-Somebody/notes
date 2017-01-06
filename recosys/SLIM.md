@@ -1,3 +1,7 @@
+---
+title: Sparse LInear Method (SLIM)
+category: Recommendation System
+---
 # SLIM(Sparse LInear Method)
 
 ## Introduction

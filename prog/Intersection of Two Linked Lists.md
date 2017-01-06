@@ -36,3 +36,48 @@ A tricky method is to convert the the problem into list cycle problem. We can re
 4. If *N > M*, move *pa* forward *N-M* steps. Otherwise, move *pb* forward *M-N* steps.
 5. Move *pa* and *pb* together util *pa* equals to *pb*.
 6. Return *pa*(or *pb*) as result. If *pa==pb==NULL*, it means they have no intersection. Ohterwise, means *pa==pb!=NULL* is the intersection node.
+
+## Source Code
+```C++
+class Solution {
+public:
+    ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
+        int lenA = 0;
+        int lenB = 0;
+        ListNode* node = headA;
+        while (node != NULL) {
+            ++lenA;
+            node = node->next;
+        }
+        node = headB;
+        while (node != NULL) {
+            ++lenB;
+            node = node->next;
+        }
+        ListNode* nodeA = headA;
+        ListNode* nodeB = headB;
+        if (lenA > lenB) {
+            int diff = lenA - lenB;
+            while (diff > 0) {
+                nodeA = nodeA->next;
+                --diff;
+            }
+        } else {
+            int diff = lenB - lenA;
+            while (diff > 0) {
+                nodeB = nodeB->next;
+                --diff;
+            }
+        }
+        while (nodeA && nodeB) {
+            if (nodeA == nodeB) {
+                return nodeA;
+            } else {
+                nodeA = nodeA->next;
+                nodeB = nodeB->next;
+            }
+        }
+        return NULL;
+    }
+};
+```

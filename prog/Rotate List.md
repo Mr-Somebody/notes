@@ -27,3 +27,40 @@ More efficient method is to move tail *k* elements together, which is method int
 4. Create another pointer *node = pre->next* and move it to the last node.
 5. Set *node->next = pre* and set *pre->next=NULL*.
 6. Return new head *nhead*.
+
+## Source Code
+```C++
+class Solution {
+public:
+    ListNode* rotateRight(ListNode* head, int k) {
+        if (k == 0 || head == NULL) return head;
+        // Find end
+        int num = 1;
+        ListNode* end = head;
+        while (end->next != NULL) {
+            end = end->next;
+            ++num;
+        }
+        //
+        k = k % num;
+        if (k == 0) {
+            return head;
+        }
+        ListNode* pre = head;
+        int i = num - k - 1;
+        while (i > 0) {
+            pre = pre->next;
+            --i;
+        }
+        ListNode* nhead = pre->next;
+        //printf("A:%d,k=%d\n", nhead->val, k);
+        ListNode* node = pre->next;
+        while (node->next) {
+            node = node->next;
+        }
+        node->next = head;
+        pre->next = NULL;
+        return nhead;
+    }
+};
+```

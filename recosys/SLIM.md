@@ -30,7 +30,6 @@ Since the columns of \\(W\\) are independent, we can calculate each column of \\
 
 \\[
 \\mathop{minimize}\\limits\_{w\_{j}}\\quad\\frac{1}{2}\|\|a\_{j}-Aw\_{j}\|\|\_{2}^{2}+\\frac{\\beta}{2}\|\|w\_{j}\|\|\_{2}^{2}+\\lambda\|\|w\_{j}\|\|\_{1}
-\\eqno{(1)}
 \\]
 
 \\[subject\\quad to\\quad w\_{j} \\ge 0, \\quad\\quad diag(w\_{i,j})=0\\]
@@ -39,4 +38,4 @@ where \\(w\_{j}\\) is the j-th colum of \\(W\\).
 
 ## Ranking TOP-N items by SLIM
 
-The sparsity of \\(W\\) enables significantly faster top-N recommendation.
+The sparsity of \\(W\\) enables significantly faster top-N recommendation. Besides, \\(a^{T}\_{i}\\) is also very sparse(i.e., the user usually rated only a small fraction of all items). So, the calculate of \\(\\hat{a}\_{i}^{T}\\) can be very fast. The computational complexity to do recommendation for user \\(u\_{i}\\) is \\(O(n\_{a\_{i}} \\times n\_{w}+Nlog(N))\\), where \\(n\_{a\_{i}}\\) is the number of non zero values in \\(a\_{i}^{T}\\), and \\(n\_{w}\\) is the average number of non-zero values in rows of W. The \\(Nlog(N)\\) is for sorting the highest scoring N items, which can be selected from the potentially \\(n\_{a\_{i}} \\times n\_{w}\\) non-zero entries in \\(a\_{i}^{T}\\) in linear time using linear selection.

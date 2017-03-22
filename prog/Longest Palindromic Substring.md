@@ -20,7 +20,7 @@ Given a string s, find the longest palindome substring in s.
 ### Manacher: O(n)
 1. Intuition: Assume the longest palindome centered at *i* is \\(2 \\times R_{i}\\), where \\(R_{i}\\) is the radius of palindome. For center *i+k* if \\(R_{i} \\ge k\\), we can use the information of opposite center of *i+k* relative to *i* to calculate *i+k*'s radius.
 2. Methodology: Assume \\(C_{i}\\) is center of a palindome which reaches the rightmost(Which means that \\(C_{i}+R_{i}\\) is biggest in all known palindome).
-    1. For the center \\(C_{k}\\) to consider, If \\(C_{i}+R_{i} \\gt C_{k}\\), we take a look at the opposite center of \\(C_{k}\\) relative to \\(C_{i}\\) represented by \\(\\hat{C}\_{k}\\) and set \\(R\_{k}\\) as \\(min\\hat{R}\_{k}, C\_{i}+R\_{i}-C\_{k})\\).
+    1. For the center \\(C_{k}\\) to consider, If \\(C_{i}+R_{i} \\gt C_{k}\\), we take a look at the opposite center of \\(C_{k}\\) relative to \\(C_{i}\\) represented by \\(\\hat{C}\_{k}\\) and set \\(R\_{k}\\) as \\(min(\\hat{R}\_{k}, C\_{i}+R\_{i}-C\_{k})\\).
     2. If the radius of  \\(C_{k}\\) reaches the rightmost of  \\(C_{i}\\). We need to look forward to see if there is more charaters for center  \\(C_{k}\\).
 3. Prof of time complexity:
     1. Because we do not necessarily to update rightmost center during traverse the string. Suppose there is *k* rightmost centers. For the traverse steps that do not update rightmost center, the time complexity is O(1) and the total time complexity of which is up to O(n), so we can ignore these steps.

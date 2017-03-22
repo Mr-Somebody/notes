@@ -1,5 +1,5 @@
 ## Welcome to my notes pages
-This project is destinated for doc my experiences.
+This page is destinated for doc my experiences.
 
 ## Catalog
 

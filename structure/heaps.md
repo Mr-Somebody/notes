@@ -1,0 +1,85 @@
+---
+title: heaps
+category: Structure
+---
+```C++
+#include <vector>
+#include <algorithm>
+
+template<class T>
+class MinHeaps {
+public:
+    MinHeaps();
+    ~MinHeaps();
+    T& top();
+    void pop();
+    void push(T&);
+    int size();
+    bool empty();
+    void print();
+
+private:
+    std::vector<T> buf;
+};
+
+template<class T>
+MinHeaps<T>::MinHeaps() {
+}
+
+template<class T>
+MinHeaps<T>::~MinHeaps() {
+    buf.clear();
+}
+
+template<class T>
+T& MinHeaps<T>::top() {
+    return buf[0];
+}
+
+template<class T>
+bool MinHeaps<T>::empty() {
+    return buf.size() == 0;
+}
+
+template<class T>
+void MinHeaps<T>::pop() {
+    if (buf.size() == 0) return;
+    buf[0] = buf[buf.size() - 1];
+    buf.resize(buf.size() - 1);
+    uint pos = 0;
+    while (pos < buf.size()) {
+        uint lp = (pos << 1) + 1;
+        uint rp = lp + 1;
+        const T& min_value = std::min(lp < buf.size() ? buf[lp] : buf[pos],
+                                      rp < buf.size() ? buf[rp] : buf[pos]);
+        if (buf[pos]<= min_value) {
+            break;
+        }
+        uint np = rp;
+        if(buf[lp] == min_value) {
+            np = lp;
+        }
+        int tmp = buf[pos];
+        buf[pos] = buf[np];
+        buf[np] = tmp;
+        pos = np;
+    }
+}
+
+template<class T>
+void MinHeaps<T>::push(T& val) {
+    buf.push_back(val);
+    uint pos = buf.size() - 1;
+    while (pos > 0) {
+        uint p = (pos - 1) >> 1;
+        if (buf[pos] < buf[p]) {
+            int tmp = buf[p];
+            buf[p] = buf[pos];
+            buf[pos] = tmp;
+            pos = p;
+        } else {
+            break;
+        }
+    }
+}
+```

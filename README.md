@@ -16,6 +16,11 @@ This page is destinated for doc my experiences.
 
 1. [Reservoir Sampling Algorithms](algo/Reservoir Sampling Algorithms)
 2. [Fisher-Yates Shuffle](algo/Fisher-Yates Shuffle)
+3. [0-1 knapsack problem](algo/0-1 knapsack problem)
+4. [fractional knapsack problem](algo/fractional knapsack problem)
+
+### Structure
+1. [Heaps](structure/heaps)
 
 ### Programs
 

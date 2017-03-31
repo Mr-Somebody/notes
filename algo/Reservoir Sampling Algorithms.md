@@ -13,6 +13,9 @@ We make the probability of pick *(i+1)th* item to be *k/(i+1)*, then the probabi
 ## References
 https://en.wikipedia.org/wiki/Reservoir_sampling
 
+## Further Reading
+[Map-Reduce Reservoir Sampling](http://had00b.blogspot.hk/2013/07/random-subset-in-mapreduce.html)
+
 ## Source Code
 ```C++
 #include <stdio.h>

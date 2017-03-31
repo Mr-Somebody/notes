@@ -10,7 +10,7 @@ category: Algorithms
 ## Methodology
 
 ## References
-https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle
+[Wikipedia](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle)
 
 ## Source code
 ```C++

@@ -11,7 +11,7 @@ Suppose we have selected *k* items from *i* items uniformly, which means that ev
 We make the probability of pick *(i+1)th* item to be *k/(i+1)*, then the probability that a item already picked not to be dropped is *1-k/(i+1) + k/(i+1) * (k-1)/k*, which is *i/(i+1)*. So for a item already in reservoir, the total probability in picked is *k/i * i/(i+1)*, which is also *k/(i+1)*.
 
 ## References
-https://en.wikipedia.org/wiki/Reservoir_sampling
+[Wikipedia](https://en.wikipedia.org/wiki/Reservoir_sampling)
 
 ## Further Reading
 [Map-Reduce Reservoir Sampling](http://had00b.blogspot.hk/2013/07/random-subset-in-mapreduce.html)

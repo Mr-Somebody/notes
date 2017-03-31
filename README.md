@@ -15,6 +15,7 @@ This page is destinated for doc my experiences.
 ### Algorithms
 
 1. [Reservoir Sampling Algorithms](algo/Reservoir Sampling Algorithms)
+2. [Fisher-Yates Shuffle](algo/Fisher-Yates Shuffle)
 
 ### Programs
 

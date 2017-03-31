@@ -11,6 +11,8 @@ This page is destinated for doc my experiences.
 ### Machine Learning
 
 1. [Logistic Regression](ml/Logistic Regression)
+2. [Entropy and Information Gain](ml/Entropy and Information Gain)
+3. [Decision Tree Learning](ml/Decision Tree Learning)
 
 ### Algorithms
 

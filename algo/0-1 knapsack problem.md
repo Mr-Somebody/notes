@@ -14,7 +14,7 @@ From the intuition view, this is a optimization problem, which we can try DP met
 
 For a defined candy \\(c_{k}\\), we need to decide whether to put it into the pocket or not. Then we divided the problem \\(maximize \\quad F(k,w) \\) to 2 sub-problems: \\(maximize \\quad F(k-1, w)\\) (If we put the candy into pocket) and \\(maximize \\quad F(k-1, w-w_{k})\\). And both sub-problems are optimization problem identical to the original problem (except the scale decrease by 1). The origin probem then can be solved by the following recursive formula:
 
-\\[maximize \\quad F(k,w))=max(maximize \\quad F(k-1,w)), \\quad maximize \\quad F(k-1,w-w_{k})+v_{k}\\]
+\\[maximize \\quad F(k,w))=max(maximize \\quad F(k-1,w), \\quad maximize \\quad F(k-1,w-w_{k})+v_{k})\\]
 
 With the formula above, we can coding our recursive solution to the problem. However, we can simply find that there are overlaping sub-problems. Suppose we have three candies(0,1,2) with weight 30, 20, 20 and pocket capacity 50. When we take candy 1 and do not take candy 2, we need to calculate \\(F(0,30)\\). On the cantrary, if we take candy 2 instead of candy 1, we also need toe calulate \\(F(0,30)\\). We caculate the sub-problems \\(F(0,30)\\) twice. To sovle this, we can simply add add memoization to our recursive solutions. If \\(F(k,w)\\) is in our memo, we do not recalculate it again, but simply return the value in memo.
 

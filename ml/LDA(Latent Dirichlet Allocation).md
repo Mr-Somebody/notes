@@ -34,7 +34,7 @@ category: Machine Learning
 ## Model
 Given the parameter \\(\\alpha\\) and \\(\\beta\\), the joint distribution of a topic mixture \\(\\theta\\), a set of N topics z, and a set of N words w is given by:
 
-\\[p(\\theta,z,w\|\\alpha,\\beta)\\=p(\\theta\|\\alpha)\\prod\_{n=1}^N]
+\\[p(\\theta,z,w\|\\alpha,\\beta)\\=p(\\theta\|\\alpha)\\prod_{n=1}^N]
 
 Integrating over \\(\\theta\\) and summing over \\(z\\), we obtain the marginal distribution of a document:
 

@@ -41,11 +41,11 @@ Given the parameter \\(\\alpha\\) and \\(\\beta\\), the joint distribution of a 
 
 Integrating over \\(\\theta\\) and summing over \\(z\\), we obtain the marginal distribution of a document:
 
-\\[p(w\|\\alpha,\\beta)=\\int p(\\theta\|\\alpha)(\\prod\_{n=1}^N \\sum\_{z\_{dn}} p(z\_{dn}\|\\theta)p(w\_{dn}\|z\_{dn},\\beta)) (\\prod\_{n=1}^N\_{d}) {\\rm d}\\theta \\]
+\\[p(w\|\\alpha,\\beta)=\\int p(\\theta\|\\alpha)(\\prod\_{n=1}^N \\sum\_{z\_{dn}} p(z\_{dn}\|\\theta)p(w\_{dn}\|z\_{dn},\\beta)) {\\rm d}\\theta \\]
 
 Taking the product of the marginal probability of single document, we obtain the probability of a corpus:
 
-\\[p(D\|\\alpha,\\beta)=\\prod\_{d=1}^M \\int p(\\theta\_{d}\|\\alpha)  {\\rm d}\\theta\_{d} \\]
+\\[p(D\|\\alpha,\\beta)=\\prod\_{d=1}^M \\int p(\\theta\_{d}\|\\alpha) (\\prod\_{n=1}^{N\_{d}}) {\\rm d}\\theta\_{d} \\]
 
 ## Relation with other latent variable models
 1. Unigram Model

@@ -62,6 +62,7 @@ PLSI has following shortcomings:
 - For a k-topic PLSI model with vocabular size V and document count M, there exists \\(kV+kM\\) parameters and therefor linear growth in M. The linear growth of parameters suggests that the model is prone to overfitting.
 4. Graphical Representations
 ![Graphic Model Representation](graphic model representation of LDA related.png "Graphic Model Representation")
+
 ## A geometric interpretation (*extract from reference [1], the LDA paper*)
 All four of the models described above—unigram, mixture of unigrams, pLSI, and LDA—operate in the space of distributions over words. Each such distribution can be viewed as a point on the (V −1)-simplex, which we call the word simplex.
 

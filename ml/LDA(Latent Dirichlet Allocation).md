@@ -45,7 +45,7 @@ Integrating over \\(\\theta\\) and summing over \\(z\\), we obtain the marginal 
 
 Taking the product of the marginal probability of single document, we obtain the probability of a corpus:
 
-\\[p(D\|\\alpha,\\beta)=\\prod\_{d=1}^M \\int p(\\theta\_{d}\|\\alpha) (\\prod\_{n=1}^N\_{d} \\sum\_{z\_{dn}} p(z\_{dn}\|\\theta\_{d})p(w\_{dn}\|z\_{dn},\\beta)) {\\rm d}\\theta\_{d} \\]
+\\[p(D\|\\alpha,\\beta)=\\prod\_{d=1}^M \\int p(\\theta\_{d}\|\\alpha)  {\\rm d}\\theta\_{d} \\]
 
 ## Relation with other latent variable models
 1. Unigram Model
@@ -64,8 +64,8 @@ The pLSI model attempts to relax the simplifying assumption made in the mixture 
 \\[p(d,w\_{n})=p(d)\\sum\_{z} p(w\_{n}\|z)p(z\|d)\\]
 
 PLSI has following shortcomings:
-- It can only model the documents in training set, which means \\(p(z\|d)\\) is only for documents trained. And it's not clear how to model new seen documents.
-- For a k-topic PLSI model with vocabular size V and document count M, there exists \\(kV+kM\\) parameters and therefor linear growth in M. The linear growth of parameters suggests that the model is prone to overfitting.
+    - It can only model the documents in training set, which means \\(p(z\|d)\\) is only for documents trained. And it's not clear how to model new seen documents.
+    - For a k-topic PLSI model with vocabular size V and document count M, there exists \\(kV+kM\\) parameters and therefor linear growth in M. The linear growth of parameters suggests that the model is prone to overfitting.
 
 4. Graphical Representations
 ![Graphic Model Representation](graphic model representation of LDA related.png "Graphic Model Representation")

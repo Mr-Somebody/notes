@@ -45,7 +45,7 @@ Integrating over \\(\\theta\\) and summing over \\(z\\), we obtain the marginal 
 
 Taking the product of the marginal probability of single document, we obtain the probability of a corpus:
 
-\\[p(D\|\\alpha,\\beta)=\\prod\_{d=1}^M \\int p(\\theta\_{d}\|\\alpha) (\\prod\_{n=1}^{N\_{d}}) {\\rm d}\\theta\_{d} \\]
+\\[p(D\|\\alpha,\\beta)=\\prod\_{d=1}^M \\int p(\\theta\_{d}\|\\alpha) (\\prod\_{n=1}^{N\_{d}} \\sum\_{z\_{dn}} p(z\_{dn}\|\\theta\_{d})p(w\_{dn}\|z\_{dn},\\beta)) {\\rm d}\\theta\_{d} \\]
 
 ## Relation with other latent variable models
 1. Unigram Model
@@ -62,7 +62,7 @@ PLSI has following shortcomings:
 - For a k-topic PLSI model with vocabular size V and document count M, there exists \\(kV+kM\\) parameters and therefor linear growth in M. The linear growth of parameters suggests that the model is prone to overfitting.
 4. Graphical Representations
 ![Graphic Model Representation](graphic model representation of LDA related.png "Graphic Model Representation")
-5. A geometric interpretation (*extract from reference [1], the LDA paper*)
+## A geometric interpretation (*extract from reference [1], the LDA paper*)
 All four of the models described above—unigram, mixture of unigrams, pLSI, and LDA—operate in the space of distributions over words. Each such distribution can be viewed as a point on the (V −1)-simplex, which we call the word simplex.
 
 The unigram model finds a single point on the word simplex and posits that all words in the corpus come from the corresponding distribution. The latent variable models consider k points on the word simplex and form a sub-simplex based on those points, which we call the topic simplex. Note that any point on the topic simplex is also a point on the word simplex. The different latent variable models use the topic simplex in different ways to generate a document.

@@ -3,13 +3,13 @@ title: Latent Dirichlet Allocation
 category: Machine Learning
 ---
 ## Related Conceptions
-[Gamma Distribution](/mathematics/Gamma Function)
-[Beta Distribution](/mathematics/Beta Function)
-[Dirichlet Distribution](/mathematics/Dirichlet Distribution)
-[k-dimension Dirichlet Distribution](#)
-[LSI/LSA (Latent Semantic Indexing/Analysis)](/ml/LSI and PLSI)
-[PLSI/PLSA (Probabilistic LSI/LSA)](/ml/LSI and PLSI)
-[Exchangeability](#)
+1. [Gamma Function](/mathematics/Gamma Function)
+2. [Beta Function](/mathematics/Beta Function)
+3. [Dirichlet Distribution](/mathematics/Dirichlet Distribution)
+4. [k-dimension Dirichlet Distribution](#)
+5. [LSI/LSA (Latent Semantic Indexing/Analysis)](/ml/LSI and PLSI)
+6. [PLSI/PLSA (Probabilistic LSI/LSA)](/ml/LSI and PLSI)
+7. [Exchangeability](#)
 
 ## Description
 LDA is a generative model.
@@ -45,7 +45,7 @@ Integrating over \\(\\theta\\) and summing over \\(z\\), we obtain the marginal 
 
 Taking the product of the marginal probability of single document, we obtain the probability of a corpus:
 
-\\[\\p(D\|\\alpha,\\beta)=\\prod\_{d=1}^M \\int p(\\theta\_{d}\|\\alpha) (\\prod\_{n=1}^N\_{d} \\sum\_{z\_{dn}} p(z\_{dn}\|\\theta\_{d})p(w\_{dn}\|z\_{dn},\\beta)) {\\rm d}\\theta\_{d}\\]
+\\[p(D\|\\alpha,\\beta)=\\prod\_{d=1}^M \\int p(\\theta\_{d}\|\\alpha) (\\prod\_{n=1}^N\_{d} \\sum\_{z\_{dn}} p(z\_{dn}\|\\theta\_{d})p(w\_{dn}\|z\_{dn},\\beta)) {\\rm d}\\theta\_{d} \\]
 
 ## Relation with other latent variable models
 1. Unigram Model

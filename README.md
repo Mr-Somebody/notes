@@ -33,3 +33,4 @@ This page is destinated for doc my experiences.
 4. [Longest Palindromic Substring](prog/Longest Palindromic Substring)
 5. [Top K Frequent Elements](prog/Top K Frequent Elements)
 6. [Increasing Triplet Subsequence](prog/IncreasingTripletSubsequence)
+7. [Power of Four](prog/Power of Four)

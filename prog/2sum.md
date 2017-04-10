@@ -1,6 +1,7 @@
 ---
 title: Two Sum
 category: Programming
+comments: true
 ---
 ## Description
 Given an array and a target *T*. Return two number in the array that sum to *T*.

@@ -1,6 +1,7 @@
 ---
 title: Latent Dirichlet Allocation
 category: Machine Learning
+comments: true
 ---
 ## Related Conceptions
 1. [Gamma Function](/mathematics/Gamma Function)

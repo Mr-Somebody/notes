@@ -1,6 +1,7 @@
 ---
 title: Sparse LInear Method (SLIM)
 category: Recommendation System
+comments: true
 ---
 # SLIM(Sparse LInear Method)
 

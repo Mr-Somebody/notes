@@ -1,6 +1,7 @@
 ---
 title: heaps
 category: Structure
+comments: true
 ---
 ```C++
 #include <vector>

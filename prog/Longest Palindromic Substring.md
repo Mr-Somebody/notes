@@ -1,6 +1,7 @@
 ---
 title: Longest Palindromic Substring
 category: Programming
+comments: true
 ---
 ## Description
 Given a string s, find the longest palindome substring in s.

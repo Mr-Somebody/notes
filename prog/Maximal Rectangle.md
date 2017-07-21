@@ -19,9 +19,8 @@ The brute force method is definately not a good method for solving this problem.
     3. Let Z(i, j) denotes the maximal rectangle area contains point (i, j).
 3. Optimal Subproblems: With the definations above. The problems we need to solve for a matrix of n lines and m columns is to calculate F(n, m). We can also define the derivation as follows:
 
-  G(i, j) = 0 if matrix[i - 1][j] == 0; Otherwise, G(i, j) = G(i - 1, j) + 1
-
-  F(i, j) = max(Z(i, j), F(i - 1, j), F(i, j - 1))
+\\[ G(i, j) = 0 \\quad\\quad if \\quad\\quad matrix[i - 1][j] == 0; \\quad Otherwise, \\quad\\quad G(i, j) = G(i - 1, j) + 1 \\]
+\\[ F(i, j) = max(Z(i, j), F(i - 1, j), F(i, j - 1)) \\]
 
 4. Overlapping: When we calculate G(i, j), we need to calculate G(i - 1, j). When we calcualte G(i - 1, j), we need to calculate G(i - 2, j). We calculate G(i - 2, j) twice when calculate G(i, j) and G(i - 1, j).
 

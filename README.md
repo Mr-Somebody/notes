@@ -1,5 +1,5 @@
-## Welcome to my notes pages
-This page is destinated for doc my experiences.
+## Welcome to my notes page
+This page is designed for doc my experiences.
 
 ## Catalog
 
@@ -27,6 +27,7 @@ This page is destinated for doc my experiences.
 
 ### Programs
 
+1. [Maximal Rectangle](prog/Maximal Rectangle)
 1. [01 Matrix](prog/01 Matrix)
 1. [H-Index](prog/H-Index)
 1. [Two Sum](prog/2sum)

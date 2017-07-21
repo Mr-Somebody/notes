@@ -19,15 +19,12 @@ The brute force method is definately not a good method for solving this problem.
     3. Let Z(i, j) denotes the maximal rectangle area contains point (i, j).
 3. Optimal Subproblems: With the definations above. The problems we need to solve for a matrix of n lines and m columns is to calculate F(n, m). We can also define the derivation as follows:
 
-\\[ G(i, j) = 0 \\quad\\quad if \\quad\\quad matrix[i - 1][j] == 0; \\quad Otherwise, \\quad\\quad G(i, j) = G(i - 1, j) + 1 \\]
+\\[ G(i, j) = 0 \\quad if \\quad matrix[i - 1][j] == 0; \\quad Otherwise, \\quad\\quad G(i, j) = G(i - 1, j) + 1 \\]
 \\[ F(i, j) = max(Z(i, j), F(i - 1, j), F(i, j - 1)) \\]
 
 4. Overlapping: When we calculate G(i, j), we need to calculate G(i - 1, j). When we calcualte G(i - 1, j), we need to calculate G(i - 2, j). We calculate G(i - 2, j) twice when calculate G(i, j) and G(i - 1, j).
-
 5. Time Complexity: For we need to calculate F(i, j) for each point, so we need to calculate at least nm calculations. However, when we calculate Z(i, j), We need traverse line i backward from point (i, j), util meet a point with value 0. So the overall time complexity of this method is O(nm^2). When m is much larger than n, we can reverse row and column to get better efficiency.
-
 6. Space complexity: From the derivation fomulas, we can see that we do not need to store every F(i, j) and G(i, j), we only need to store the value before current line. So the space complexity is O(m).
-
 7. Border Conditions:
     1. First line: For the first line, G(0, j) = 0. F(0, j) is longest consecutive 1s backward.
     2. First column: For the first column F(i, j - 1) can be treated as zero.

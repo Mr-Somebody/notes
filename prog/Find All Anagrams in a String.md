@@ -58,4 +58,4 @@ public:
 };
 ```
 ## Related Problem
-[Valid Anagram](prog/Valid Anagram)
+[Valid Anagram](/prog/Valid Anagram)

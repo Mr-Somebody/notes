@@ -34,4 +34,4 @@ public:
 };
 ```
 ## Related Problem
-[Third Maximum Number](prog/Third Maximum Number)
+[Third Maximum Number](/prog/Third Maximum Number)

@@ -33,4 +33,4 @@ public:
 ```
 
 ## Related Problem
-[H-Index](prog/H-Index)
+[H-Index](/prog/H-Index)

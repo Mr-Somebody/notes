@@ -43,4 +43,4 @@ public:
 ```
 
 ## Related Problems
- [Find All Anagrams in a String](prog/Find All Anagrams in a String)
+ [Find All Anagrams in a String](/prog/Find All Anagrams in a String)

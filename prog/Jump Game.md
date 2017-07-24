@@ -1,0 +1,40 @@
+---
+title: Jump Game
+category: Programming
+comments: true
+---
+## Description
+>Given an array of non-negative integers, you are initially positioned at the first index of the array.
+
+>Each element in the array represents your maximum jump length at that position.
+
+>Determine if you are able to reach the last index.
+
+>For example:
+A = [2,3,1,1,4], return true.
+
+>A = [3,2,1,0,4], return false.
+
+[Leetcode Link](https://leetcode.com/problems/jump-game/#/description)
+
+## Methodology
+All we need to do is to calculate the farthest we can jump to. If it is further than the end of the array, that means we can jump to the end. Otherwise, we can not. With one traverse of the array, we can do this. We keep tracking the farthest we can jump right now util the farthest position exceeding the end of the array or traverse position is greater than the farthest position. The former case means that we can jump to the end of the array, while the latter one means oposite.
+
+## Source Code
+```C++
+class Solution {
+public:
+    bool canJump(std::vector<int>& nums) {
+        int farthest = 0;
+        int pos = 0;
+        while (pos <= farthest && farthest < nums.size() - 1) {
+            int end = pos + nums[pos];
+            if (end > farthest) {
+                farthest = end;
+            }
+            ++pos;
+        }
+        return farthest >= nums.size() - 1;
+    }
+};
+```

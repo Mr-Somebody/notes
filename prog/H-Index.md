@@ -33,3 +33,5 @@ public:
     }
 };
 ```
+## Related Problem
+[Third Maximum Number](prog/Third Maximum Number)

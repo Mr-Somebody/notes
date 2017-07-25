@@ -18,7 +18,7 @@ A = [2,3,1,1,4], return true.
 [Leetcode Link](https://leetcode.com/problems/jump-game/#/description)
 
 ## Methodology
-All we need to do is to calculate the farthest we can jump to. If it is further than the end of the array, that means we can jump to the end. Otherwise, we can not. With one traverse of the array, we can do this. We keep tracking the farthest we can jump right now util the farthest position exceeding the end of the array or traverse position is greater than the farthest position. The former case means that we can jump to the end of the array, while the latter one means oposite.
+All we need to do is to calculate the farthest we can jump to. If it is further than the end of the array, that means we can jump to the end. Otherwise, we can not. With one traverse of the array, we can do this. We keep tracking the farthest we can jump right now util the farthest position exceeding the end of the array or traverse position is greater than the farthest position. The former case means that we can jump to the end of the array, while the latter one means opposite.
 
 ## Source Code
 ```C++

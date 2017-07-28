@@ -5,7 +5,22 @@ title: Blog
 <div class="ui raised segments">
     {% for post in site.posts %}
     <div class="ui segment">
-        <a href="{{ post.url }}">{{ post.title }}</a>
+      <div class="ui link items">
+        <div class="item">
+          <div class="ui tiny image">
+            {% if post.categories[0] == "Programming" %}
+            <img src="{{ site.baseurl }}/static/icons/algo.png">
+            {% else %}
+            <img src="{{ site.baseurl }}/static/icons/prog.png">
+          </div>
+          <div class="content">
+            <div class="header">{{ post.title }}</div>
+            <div class="description">
+              <p>{{ post.excerpt }}</p>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
     {% endfor %}
 </div>

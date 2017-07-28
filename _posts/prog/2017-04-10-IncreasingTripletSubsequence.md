@@ -4,8 +4,7 @@ category: Programming
 comments: true
 excerpt_separator: <!--more-->
 ---
-## Description
->Given an unsorted array return whether an increasing subsequence of length 3 exists or not in the array.
+Given an unsorted array return whether an increasing subsequence of length 3 exists or not in the array.
 <!--more-->
 Formally the function should:
 Return true if there exists i, j, k

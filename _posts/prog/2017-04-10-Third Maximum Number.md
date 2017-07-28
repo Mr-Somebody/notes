@@ -4,8 +4,7 @@ category: Programming
 comments: true
 excerpt_separator: <!--more-->
 ---
-## Description
->Given a non-empty array of integers, return the third maximum number in this array. If it does not exist, return the maximum number. The time complexity must be in O(n).
+Given a non-empty array of integers, return the third maximum number in this array. If it does not exist, return the maximum number. The time complexity must be in O(n).
 <!--more-->
 
 [Leetcode Link](https://leetcode.com/problems/third-maximum-number/#/description)

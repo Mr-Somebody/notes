@@ -4,8 +4,7 @@ category: Programming
 comments: true
 excerpt_separator: <!--more-->
 ---
-## Description
->Given a string s, find the longest palindome substring in s.
+Given a string s, find the longest palindome substring in s.
 <!--more-->
 
 ## Methodology

@@ -5,13 +5,13 @@ comments: true
 date: 2017-07-28 16:23:01 +0800
 excerpt_separator: <!--more-->
 ---
->Given a linked list, swap every two adjacent nodes and return its head.
+Given a linked list, swap every two adjacent nodes and return its head.
 <!--more-->
 
->For example,
+For example,
 Given 1->2->3->4, you should return the list as 2->1->4->3.
 
->Your algorithm should use only constant space. You may not modify the values in the list, only nodes itself can be changed.
+Your algorithm should use only constant space. You may not modify the values in the list, only nodes itself can be changed.
 
 [Leetcode Link](https://leetcode.com/problems/swap-nodes-in-pairs/#/description)
 

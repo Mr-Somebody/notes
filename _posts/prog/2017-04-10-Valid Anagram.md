@@ -4,15 +4,14 @@ category: Programming
 comments: true
 excerpt_separator: <!--more-->
 ---
-## Description
->Given two strings s and t, write a function to determine if t is an anagram of s.
+Given two strings s and t, write a function to determine if t is an anagram of s.
 <!--more-->
 
->For example,
+For example,
 s = "anagram", t = "nagaram", return true.
 s = "rat", t = "car", return false.
 
->Note:
+Note:
 You may assume the string contains only lowercase alphabets.
 
 >Follow up:

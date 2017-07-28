@@ -4,8 +4,7 @@ category: Programming
 comments: true
 excerpt_separator: <!--more-->
 ---
-## Description
->Find the sum of all left leaves in a given binary tree.
+Find the sum of all left leaves in a given binary tree.
 <!--more-->
 
 [Leetcode Link](https://leetcode.com/problems/sum-of-left-leaves/#/description)

@@ -4,8 +4,7 @@ category: Programming
 comments: true
 excerpt_separator: <!--more-->
 ---
-## Description
->Given an integer (signed 32 bits), write a function to check whether it is a power of 4.
+Given an integer (signed 32 bits), write a function to check whether it is a power of 4.
 <!--more-->
 
 [Leetcode Link](https://leetcode.com/problems/power-of-four/#/description)

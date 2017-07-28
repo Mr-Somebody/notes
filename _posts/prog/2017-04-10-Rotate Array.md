@@ -4,13 +4,12 @@ category: Programming
 comments: true
 excerpt_separator: <!--more-->
 ---
-## Description
->Rotate an array of n elements to the right by k steps.
+Rotate an array of n elements to the right by k steps.
 <!--more-->
 
->For example, with n = 7 and k = 3, the array [1,2,3,4,5,6,7] is rotated to [5,6,7,1,2,3,4].
+For example, with n = 7 and k = 3, the array [1,2,3,4,5,6,7] is rotated to [5,6,7,1,2,3,4].
 
->Note:
+Note:
 Try to come up as many solutions as you can, there are at least 3 different ways to solve this problem.
 
 [Leetcode Link](https://leetcode.com/problems/rotate-array/#/description)

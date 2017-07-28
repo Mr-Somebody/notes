@@ -2,26 +2,123 @@
 layout: default
 title: Blog
 ---
+<!--Programming-->
 <div class="ui raised segments">
-    {% for post in site.posts %}
-    <div class="ui segment">
-      <div class="ui items">
-        <div class="item">
-          <div class="ui tiny image">
-            {% if post.categories[0] == "Programming" %}
-            <img src="{{ site.baseurl }}/static/icons/algo.png">
-            {% else %}
-            <img src="{{ site.baseurl }}/static/icons/prog.png">
-            {% endif %}
-          </div>
-          <div class="content">
-            <a class="header" href="{{ post.url }}">{{ post.title }}</a>
-            <div class="description">
-              <p>{{ post.excerpt }}</p>
-            </div>
+  {% for post in site.categories["Programming"] %}
+  <div class="ui segment">
+    <div class="ui items">
+      <div class="item">
+        <div class="ui tiny image">
+          <img src="{{ site.baseurl }}/static/icons/prog.png">
+        </div>
+        <div class="content">
+          <a class="header" href="{{ post.url }}">{{ post.title }}</a>
+          <div class="description">
+            <p>{{ post.excerpt }}</p>
           </div>
         </div>
       </div>
     </div>
-    {% endfor %}
+  </div>
+  {% endfor %}
+</div>
+<!--Algorithms-->
+<div class="ui raised segments">
+  {% for post in site.categories["Algorithms"] %}
+  <div class="ui segment">
+    <div class="ui items">
+      <div class="item">
+        <div class="ui tiny image">
+          <img src="{{ site.baseurl }}/static/icons/algo.png">
+        </div>
+        <div class="content">
+          <a class="header" href="{{ post.url }}">{{ post.title }}</a>
+          <div class="description">
+            <p>{{ post.excerpt }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+<!--Mathematics-->
+<div class="ui raised segments">
+  {% for post in site.categories["Mathematics"] %}
+  <div class="ui segment">
+    <div class="ui items">
+      <div class="item">
+        <div class="ui tiny image">
+          <img src="{{ site.baseurl }}/static/icons/math.png">
+        </div>
+        <div class="content">
+          <a class="header" href="{{ post.url }}">{{ post.title }}</a>
+          <div class="description">
+            <p>{{ post.excerpt }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+<!--Machine Learning-->
+<div class="ui raised segments">
+  {% for post in site.categories["Machine Learning"] %}
+  <div class="ui segment">
+    <div class="ui items">
+      <div class="item">
+        <div class="ui tiny image">
+          <img src="{{ site.baseurl }}/static/icons/ml.png">
+        </div>
+        <div class="content">
+          <a class="header" href="{{ post.url }}">{{ post.title }}</a>
+          <div class="description">
+            <p>{{ post.excerpt }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+<!--Recommendation System-->
+<div class="ui raised segments">
+  {% for post in site.categories["Recommendation System"] %}
+  <div class="ui segment">
+    <div class="ui items">
+      <div class="item">
+        <div class="ui tiny image">
+          <img src="{{ site.baseurl }}/static/icons/recosys.png">
+        </div>
+        <div class="content">
+          <a class="header" href="{{ post.url }}">{{ post.title }}</a>
+          <div class="description">
+            <p>{{ post.excerpt }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+<!--Structure-->
+<div class="ui raised segments">
+  {% for post in site.categories["Structure"] %}
+  <div class="ui segment">
+    <div class="ui items">
+      <div class="item">
+        <div class="ui tiny image">
+          <img src="{{ site.baseurl }}/static/icons/structure.png">
+        </div>
+        <div class="content">
+          <a class="header" href="{{ post.url }}">{{ post.title }}</a>
+          <div class="description">
+            <p>{{ post.excerpt }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
 </div>

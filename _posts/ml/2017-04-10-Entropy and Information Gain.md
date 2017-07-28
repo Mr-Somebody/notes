@@ -1,6 +1,6 @@
 ---
-title: fractional knapsack problem
-category: Algorithms
+title: Entropy and Information Gain (IG)
+category: Machine Learning
 comments: true
 excerpt_separator: <!--more-->
 ---

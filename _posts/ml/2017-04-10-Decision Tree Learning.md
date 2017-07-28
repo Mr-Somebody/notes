@@ -1,6 +1,6 @@
 ---
-title: fractional knapsack problem
-category: Algorithms
+title: Decision Tree Learning
+category: Machine Learning
 comments: true
 excerpt_separator: <!--more-->
 ---

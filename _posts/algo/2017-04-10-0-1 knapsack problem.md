@@ -2,9 +2,10 @@
 title: 0-1 knapsack problem
 category: Algorithms
 comments: true
+excerpt_separator: <!--more-->
 ---
-## Problem
->The knapsack problem or rucksack problem is a problem in combinatorial optimization: Given a set of items, each with a weight and a value, determine the number of each item to include in a collection so that the total weight is less than or equal to a given limit and the total value is as large as possible. It derives its name from the problem faced by someone who is constrained by a fixed-size knapsack and must fill it with the most valuable items.
+The knapsack problem or rucksack problem is a problem in combinatorial optimization: Given a set of items, each with a weight and a value, determine the number of each item to include in a collection so that the total weight is less than or equal to a given limit and the total value is as large as possible. It derives its name from the problem faced by someone who is constrained by a fixed-size knapsack and must fill it with the most valuable items.
+<!--more-->
 
 To say *fixed-size knapsack* or *0-1 knapsack problem*, it means the item can either put into the knapsack or not. The item can not be partially put into the knapsack (Likely put 1/3 of the item input the knapsack). To illustrate the problem more intuitively, we can treat it equal to the problem dscribed below:
 

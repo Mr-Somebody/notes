@@ -27,6 +27,8 @@ This page is designed for doc my experiences.
 
 ### Programs
 
+1. [Bulls and Cows](prog/Bulls and Cows)
+1. [Compare Version Numbers](prog/Compare Version Numbers)
 1. [Binary Tree Right Side View](prog/Binary Tree Right Side View)
 1. [Edit Distance](prog/Edit Distance)
 1. [Number of Islands](prog/Number of Islands)

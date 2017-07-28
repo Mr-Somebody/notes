@@ -23,7 +23,7 @@ Let the edit distance of word1[0, i - 1) and word2[0, j) for instance, and we ca
 3. Overlapping: From the description above, we can get the recursive formula as following:
 
 \\[F(i, j) = min(F(i - 1, j) + 1, F(i, j - 1) + 1, F(i - 1, j - 1) + t(i - 1, j - 1))\\]
-\\[t(i, j) = 0 \\quad if word1[i] == word2[j], \\quad otherwise, t(i, j) = 1\\]
+\\[t(i, j) = 0 \\quad if \\quad word1[i] == word2[j], \\quad otherwise, t(i, j) = 1\\]
 
 From the formula above, we can get that we need perform the calculation of F(i - 1, j - 1) before F(i, j) and the same for F(i - 1, j) (need the value of F(i - 1, j - 1)). So we calculate F(i - 1, j - 1) twice in both F(i, j) and F(i - 1, j). To avoid repetitions, we can use a array to store pre-calculated values.
 4. Complexity Analyse: For two given string of length m and n separately, we need to calculate all F(i, j) for i in [0, m] and j in [0, n]. So the time complexity of this DP method is O(mn). Besides, we a array store intermediate results. So the space complexity is also O(mn).

@@ -4,7 +4,7 @@ title: Blog
 ---
 <!--Programming-->
 <div class="ui raised segments">
-  {% for post in site.categories["Programming"] %}
+  {% for post in site.categories["Programming"] limit:3 %}
   <div class="ui segment">
     <div class="ui items">
       <div class="item">
@@ -21,10 +21,13 @@ title: Blog
     </div>
   </div>
   {% endfor %}
+  <div class="ui segment">
+    <p><a href="{{ site.url }}/prog.html">More...</a></p>
+  </div>
 </div>
 <!--Algorithms-->
 <div class="ui raised segments">
-  {% for post in site.categories["Algorithms"] %}
+  {% for post in site.categories["Algorithms"] limit:3 %}
   <div class="ui segment">
     <div class="ui items">
       <div class="item">
@@ -41,10 +44,13 @@ title: Blog
     </div>
   </div>
   {% endfor %}
+  <div class="ui segment">
+    <p><a href="{{ site.url }}/algo.html">More...</a></p>
+  </div>
 </div>
 <!--Mathematics-->
 <div class="ui raised segments">
-  {% for post in site.categories["Mathematics"] %}
+  {% for post in site.categories["Mathematics"] limit:3 %}
   <div class="ui segment">
     <div class="ui items">
       <div class="item">
@@ -61,10 +67,13 @@ title: Blog
     </div>
   </div>
   {% endfor %}
+  <div class="ui segment">
+    <p><a href="{{ site.url }}/math.html">More...</a></p>
+  </div>
 </div>
 <!--Machine Learning-->
 <div class="ui raised segments">
-  {% for post in site.categories["Machine Learning"] %}
+  {% for post in site.categories["Machine Learning"] limit:3 %}
   <div class="ui segment">
     <div class="ui items">
       <div class="item">
@@ -81,10 +90,13 @@ title: Blog
     </div>
   </div>
   {% endfor %}
+  <div class="ui segment">
+    <p><a href="{{ site.url }}/ml.html">More...</a></p>
+  </div>
 </div>
 <!--Recommendation System-->
 <div class="ui raised segments">
-  {% for post in site.categories["Recommendation System"] %}
+  {% for post in site.categories["Recommendation System"] limit:3 %}
   <div class="ui segment">
     <div class="ui items">
       <div class="item">
@@ -101,10 +113,13 @@ title: Blog
     </div>
   </div>
   {% endfor %}
+  <div class="ui segment">
+    <p><a href="{{ site.url }}/recosys.html">More...</a></p>
+  </div>
 </div>
 <!--Structure-->
 <div class="ui raised segments">
-  {% for post in site.categories["Structure"] %}
+  {% for post in site.categories["Structure"] limit:3 %}
   <div class="ui segment">
     <div class="ui items">
       <div class="item">
@@ -121,4 +136,7 @@ title: Blog
     </div>
   </div>
   {% endfor %}
+  <div class="ui segment">
+    <p><a href="{{ site.url }}/struct.html">More...</a></p>
+  </div>
 </div>

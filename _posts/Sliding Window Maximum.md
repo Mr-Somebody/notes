@@ -2,6 +2,7 @@
 title: Sliding Window Maximum
 category: Programming
 comments: true
+date: 2017-07-28 16:23
 ---
 ## Description
 >Given an array nums, there is a sliding window of size k which is moving from the very left of the array to the very right. You can only see the k numbers in the window. Each time the sliding window moves right by one position.

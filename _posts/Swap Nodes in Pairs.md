@@ -2,6 +2,7 @@
 title: Swap Nodes in Pairs
 category: Programming
 comments: true
+date: 2017-07-28 16:23
 ---
 ## Description
 >Given a linked list, swap every two adjacent nodes and return its head.

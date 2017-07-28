@@ -2,10 +2,10 @@
 layout: default
 title: Blog
 ---
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+<div class="ui raised segments">
+    {% for post in site.posts %}
+    <div class="ui segment">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </div>
+    {% endfor %}
+</div>

@@ -7,7 +7,7 @@ title: Blog
     <div class="ui segment">
       <div class="ui items">
         <div class="item">
-          <div class="ui tiny image">
+          <div class="ui image">
             {% if post.categories[0] == "Programming" %}
             <img src="{{ site.baseurl }}/static/icons/algo.png">
             {% else %}
@@ -15,7 +15,7 @@ title: Blog
             {% endif %}
           </div>
           <div class="content">
-            <a class="header">{{ post.title }}</a>
+            <a class="header" href="{{ post.url }}">{{ post.title }}</a>
             <div class="description">
               <p>{{ post.excerpt }}</p>
             </div>

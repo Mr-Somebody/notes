@@ -22,7 +22,7 @@ There are a total of 2 courses to take. To take course 1 you should have finishe
 There are a total of 2 courses to take. To take course 1 you should have finished course 0, and to take course 0 you should also have finished course 1. So it is impossible.
 <!--more-->
 
-[Leetcode Link](https://leetcode.com/problems/detect-capital)
+[Leetcode Link](https://leetcode.com/problems/course-schedule)
 
 ## Methodology
 This is a classical problem, which will be included in every DS or Algorithm textbook. The keynote is to detect if this graph exits a circle. If does, we can not finish all courses; Otherwise we can. In the textbook, we call a directed graph without circles DAG (Directed Acyclical Graph). To determin if a graph is DAG, we recursively remove the nodes whose indegree is zero (In this problem is the course without prerequests) util no more nodes can be removed. If all nodes are removed, it means the graph is a DAG (which also means we can finish all courses); Otherwise not.

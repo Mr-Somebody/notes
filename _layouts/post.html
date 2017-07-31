@@ -42,15 +42,15 @@
         <i class="right chevron icon divider"></i>
         {% if page.categories == "Programming" %}
         <a class="section" href="{{ site.url }}/prog.html">{{ page.categories }}</a>
-        {% else if page.categories == "Algorithms" %}
+        {% elsif page.categories == "Algorithms" %}
         <a class="section" href="{{ site.url }}/algo.html">{{ page.categories }}</a>
-        {% else if page.categories == "Mathematics" %}
+        {% elsif page.categories == "Mathematics" %}
         <a class="section" href="{{ site.url }}/math.html">{{ page.categories }}</a>
-        {% else if page.categories == "Machine Learning" %}
+        {% elsif page.categories == "Machine Learning" %}
         <a class="section" href="{{ site.url }}/ml.html">{{ page.categories }}</a>
-        {% else if page.categories == "Recommendation System" %}
+        {% elsif page.categories == "Recommendation System" %}
         <a class="section" href="{{ site.url }}/recosys.html">{{ page.categories }}</a>
-        {% else if page.categories == "Structure" %}
+        {% elsif page.categories == "Structure" %}
         <a class="section" href="{{ site.url }}/structure.html">{{ page.categories }}</a>
         {% else %}
         <a class="section" href="{{ site.url }}">{{ page.categories }}</a>

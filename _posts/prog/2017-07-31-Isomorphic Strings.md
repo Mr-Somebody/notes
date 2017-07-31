@@ -22,7 +22,7 @@ Note:
 You may assume both s and t have the same length.
 <!--more-->
 
-[Leetcode Link](https://leetcode.com/problems/linked-list-cycle-ii)
+[Leetcode Link](https://leetcode.com/problems/isomorphic-strings)
 
 ## Methodology
 This is a simple question, all we need to do is to record the character map during one traverse, and check these two characters in corresponding positions are conflict with the map. If conflict (one character maps to more than one), return false; Otherwise, true.

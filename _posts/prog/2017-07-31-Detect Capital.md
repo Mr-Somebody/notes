@@ -4,6 +4,7 @@ category: Programming
 comments: true
 excerpt_separator: <!--more-->
 date: 2017-07-31 10:57:00
+layout: post
 ---
 Given a word, you need to judge whether the usage of capitals in it is right or not.
 

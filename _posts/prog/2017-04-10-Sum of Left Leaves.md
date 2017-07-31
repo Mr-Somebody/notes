@@ -3,6 +3,7 @@ title: Sum of Left Leaves
 category: Programming
 comments: true
 excerpt_separator: <!--more-->
+layout: post
 ---
 Find the sum of all left leaves in a given binary tree.
 <!--more-->

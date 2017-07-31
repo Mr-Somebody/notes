@@ -3,6 +3,7 @@ title: Find All Anagrams in a String
 category: Programming
 comments: true
 excerpt_separator: <!--more-->
+layout: post
 ---
 Given a string s and a non-empty string p, find all the start indices of p's anagrams in s.
 <!--more-->

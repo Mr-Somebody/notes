@@ -4,6 +4,7 @@ category: Programming
 comments: true
 excerpt_separator: <!--more-->
 date: 2017-07-31 14:24:00
+layout: post
 ---
 Write a program to find the node at which the intersection of two singly linked lists begins.
 

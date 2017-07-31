@@ -3,6 +3,7 @@ title: Intersection of Two Linked Lists
 category: Programming
 comments: true
 excerpt_separator: <!--more-->
+layout: post
 ---
 Write a program to find the node at which the intersection of two singly linked lists begins.
 <!--more-->

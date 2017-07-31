@@ -4,6 +4,7 @@ category: Programming
 comments: true
 excerpt_separator: <!--more-->
 date: 2017-07-31 11:11:00
+layout: post
 ---
 here are a total of n courses you have to take, labeled from 0 to n - 1.
 

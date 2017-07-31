@@ -3,6 +3,7 @@ title: Next Permutation
 category: Programming
 comments: true
 excerpt_separator: <!--more-->
+layout: post
 ---
 Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers.
 <!--more-->

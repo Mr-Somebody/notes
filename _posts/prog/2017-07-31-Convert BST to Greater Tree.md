@@ -4,6 +4,7 @@ category: Programming
 comments: true
 excerpt_separator: <!--more-->
 date: 2017-07-31 11:22:00
+layout: post
 ---
 Given a Binary Search Tree (BST), convert it to a Greater Tree such that every key of the original BST is changed to the original key plus sum of all keys greater than the original key in BST.
 <!--more-->

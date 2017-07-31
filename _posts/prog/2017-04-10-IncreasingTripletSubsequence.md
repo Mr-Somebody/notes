@@ -3,6 +3,7 @@ title: Increasing Triplet Subsequence
 category: Programming
 comments: true
 excerpt_separator: <!--more-->
+layout: post
 ---
 Given an unsorted array return whether an increasing subsequence of length 3 exists or not in the array.
 <!--more-->

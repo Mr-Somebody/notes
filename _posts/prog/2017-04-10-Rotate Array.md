@@ -3,6 +3,7 @@ title: Rotate Array
 category: Programming
 comments: true
 excerpt_separator: <!--more-->
+layout: post
 ---
 Rotate an array of n elements to the right by k steps.
 <!--more-->

@@ -4,6 +4,7 @@ category: Programming
 comments: true
 date: 2017-07-28 16:23:01 +0800
 excerpt_separator: <!--more-->
+layout: post
 ---
 Given a linked list, swap every two adjacent nodes and return its head.
 <!--more-->

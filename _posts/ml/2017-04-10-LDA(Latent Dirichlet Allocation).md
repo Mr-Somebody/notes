@@ -3,6 +3,7 @@ title: Latent Dirichlet Allocation
 category: Machine Learning
 comments: true
 excerpt_separator: <!--more-->
+layout: post
 ---
 LDA is generative model for semantic analysis. This article is to explain the theory behind LDA.
 <!--more-->

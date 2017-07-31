@@ -3,6 +3,7 @@ title: Longest Palindromic Substring
 category: Programming
 comments: true
 excerpt_separator: <!--more-->
+layout: post
 ---
 Given a string s, find the longest palindome substring in s.
 <!--more-->

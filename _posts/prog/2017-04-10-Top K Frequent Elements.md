@@ -3,6 +3,7 @@ title: Top K Frequent Elements
 category: Programming
 comments: true
 excerpt_separator: <!--more-->
+layout: post
 ---
 Given a non-empty array of integers, return the k most frequent elements.
 <!--more-->

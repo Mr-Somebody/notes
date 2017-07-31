@@ -4,6 +4,7 @@ category: Programming
 comments: true
 excerpt_separator: <!--more-->
 date: 2017-07-31 14:44:00
+layout: post
 ---
 Given a singly linked list L: L0->L1->…->Ln-1->Ln,
 reorder it to: L0->Ln->L1->Ln-1->L2->Ln-2->…

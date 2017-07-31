@@ -3,6 +3,7 @@ title: Compare Version Numbers
 category: Programming
 comments: true
 excerpt_separator: <!--more-->
+layout: post
 ---
 Compare two version numbers version1 and version2.
 If version1 > version2 return 1, if version1 < version2 return -1, otherwise return 0.

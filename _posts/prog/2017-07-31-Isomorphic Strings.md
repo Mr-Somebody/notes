@@ -4,6 +4,7 @@ category: Programming
 comments: true
 excerpt_separator: <!--more-->
 date: 2017-07-31 16:59:00
+layout: post
 ---
 Given two strings s and t, determine if they are isomorphic.
 

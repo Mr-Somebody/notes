@@ -3,6 +3,7 @@ title: Rotate List
 category: Programming
 comments: true
 excerpt_separator: <!--more-->
+layout: post
 ---
 Given a list, rotate the list to the right by k places, where k is non-negative.
 <!--more-->

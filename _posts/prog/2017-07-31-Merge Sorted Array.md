@@ -4,6 +4,7 @@ category: Programming
 comments: true
 excerpt_separator: <!--more-->
 date: 2017-07-31 15:11:00
+layout: post
 ---
 Given two sorted integer arrays nums1 and nums2, merge nums2 into nums1 as one sorted array.
 

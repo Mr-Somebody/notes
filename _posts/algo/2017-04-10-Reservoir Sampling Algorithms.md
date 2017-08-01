@@ -4,6 +4,7 @@ category: Algorithms
 comments: true
 excerpt_separator: <!--more-->
 layout: post
+tags: [sampling, randomize, list]
 ---
 Reservoir sampling is a family of randomized algorithms for randomly choosing a sample of k items from a list S containing n items, where n is either a very large or unknown number. Typically n is large enough that the list doesn't fit into main memory.
 <!--more-->

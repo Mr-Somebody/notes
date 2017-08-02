@@ -31,14 +31,11 @@
     {% include navbar.html %}
 
     <section class="main-content" style="padding-top: 20px;">
-      <div class="ui breadcrumb">
-        <a class="section">Home</a>
-        <i class="right chevron icon divider"></i>
-        <a class="section">{{ page.categories }}</a>
-        <i class="right chevron icon divider"></i>
-        <a class="section">{{ page.title }}</a>
-      </div>
-      <div class="ui divider"></div>
+      <ol class="breadcrumb">
+        <li><a href="{{ site.url }}">Home</a></li>
+        <li><a href="">{{ page.categories }}</a></li>
+        <li><a href="">{{ page.title }}</a></li>
+      </ol>
       {{ content }}
 
       {% include comment.html %}

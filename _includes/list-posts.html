@@ -1,0 +1,20 @@
+<ul class="list-group">
+  {% for post in include.posts limit include.limit%}
+  <li class="list-group-item">
+    <div class="media">
+      <div class="media-left">
+        <img src="{{ site.baseurl }}/static/icons/prog.png">
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">{{ post.title }}</h4>
+        {{ post.excerpt }}
+      </div>
+    </div>
+  </li>
+  {% endfor %}
+  {% if include.more %}
+  <li class="list-group-item">
+    <p><a href="{{ site.url }}/prog.html">More...</a></p>
+  </li>
+  {% endif %}
+</ul>

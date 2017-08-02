@@ -3,140 +3,104 @@ layout: default
 title: Blog
 ---
 <!--Programming-->
-<div class="ui raised segments">
-  {% for post in site.categories["Programming"] limit:3 %}
-  <div class="ui segment">
-    <div class="ui items">
-      <div class="item">
-        <div class="ui tiny image">
-          <img src="{{ site.baseurl }}/static/icons/prog.png">
-        </div>
-        <div class="content">
-          <a class="header" href="{{ post.url }}">{{ post.title }}</a>
-          <div class="description">
-            <p>{{ post.excerpt }}</p>
-          </div>
-        </div>
+<ul class="list-group">
+  {% for post in site.categories["Programming"] limit 3 %}
+  <li class="list-group-item">
+    <div class="media">
+      <div class="media-left">
+        <img class="media-object" src="{{ site.url }}/static/icons/prog.png" >
+      </div>
+      <div class="media-body">
+        <a href="{{ post.url }}"><h4 class="media-heading">{{ post.title }}</h4></a>
+        {{ post.excerpt }}
       </div>
     </div>
-  </div>
+  </li>
   {% endfor %}
-  <div class="ui segment">
-    <p><a href="{{ site.url }}/prog.html">More...</a></p>
-  </div>
-</div>
+  <li class="list-group-item"><a href="{{ site.url }}/prog.html">More...</a></li>
+</ul>
 <!--Algorithms-->
-<div class="ui raised segments">
-  {% for post in site.categories["Algorithms"] limit:3 %}
-  <div class="ui segment">
-    <div class="ui items">
-      <div class="item">
-        <div class="ui tiny image">
-          <img src="{{ site.baseurl }}/static/icons/algo.png">
-        </div>
-        <div class="content">
-          <a class="header" href="{{ post.url }}">{{ post.title }}</a>
-          <div class="description">
-            <p>{{ post.excerpt }}</p>
-          </div>
-        </div>
+<ul class="list-group">
+  {% for post in site.categories["Algorithms"] limit 3 %}
+  <li class="list-group-item">
+    <div class="media">
+      <div class="media-left">
+        <img class="media-object" src="{{ site.url }}/static/icons/algo.png" >
+      </div>
+      <div class="media-body">
+        <a href="{{ post.url }}"><h4 class="media-heading">{{ post.title }}</h4></a>
+        {{ post.excerpt }}
       </div>
     </div>
-  </div>
+  </li>
   {% endfor %}
-  <div class="ui segment">
-    <p><a href="{{ site.url }}/algo.html">More...</a></p>
-  </div>
-</div>
+  <li class="list-group-item"><a href="{{ site.url }}/algo.html">More...</a></li>
+</ul>
 <!--Mathematics-->
-<div class="ui raised segments">
-  {% for post in site.categories["Mathematics"] limit:3 %}
-  <div class="ui segment">
-    <div class="ui items">
-      <div class="item">
-        <div class="ui tiny image">
-          <img src="{{ site.baseurl }}/static/icons/math.png">
-        </div>
-        <div class="content">
-          <a class="header" href="{{ post.url }}">{{ post.title }}</a>
-          <div class="description">
-            <p>{{ post.excerpt }}</p>
-          </div>
-        </div>
+<ul class="list-group">
+  {% for post in site.categories["Mathematics"] limit 3 %}
+  <li class="list-group-item">
+    <div class="media">
+      <div class="media-left">
+        <img class="media-object" src="{{ site.url }}/static/icons/math.png" >
+      </div>
+      <div class="media-body">
+        <a href="{{ post.url }}"><h4 class="media-heading">{{ post.title }}</h4></a>
+        {{ post.excerpt }}
       </div>
     </div>
-  </div>
+  </li>
   {% endfor %}
-  <div class="ui segment">
-    <p><a href="{{ site.url }}/math.html">More...</a></p>
-  </div>
-</div>
+  <li class="list-group-item"><a href="{{ site.url }}/math.html">More...</a></li>
+</ul>
 <!--Machine Learning-->
-<div class="ui raised segments">
-  {% for post in site.categories["Machine Learning"] limit:3 %}
-  <div class="ui segment">
-    <div class="ui items">
-      <div class="item">
-        <div class="ui tiny image">
-          <img src="{{ site.baseurl }}/static/icons/ml.png">
-        </div>
-        <div class="content">
-          <a class="header" href="{{ post.url }}">{{ post.title }}</a>
-          <div class="description">
-            <p>{{ post.excerpt }}</p>
-          </div>
-        </div>
+<ul class="list-group">
+  {% for post in site.categories["Machine Learning"] limit 3 %}
+  <li class="list-group-item">
+    <div class="media">
+      <div class="media-left">
+        <img class="media-object" src="{{ site.url }}/static/icons/ml.png" >
+      </div>
+      <div class="media-body">
+        <a href="{{ post.url }}"><h4 class="media-heading">{{ post.title }}</h4></a>
+        {{ post.excerpt }}
       </div>
     </div>
-  </div>
+  </li>
   {% endfor %}
-  <div class="ui segment">
-    <p><a href="{{ site.url }}/ml.html">More...</a></p>
-  </div>
-</div>
+  <li class="list-group-item"><a href="{{ site.url }}/ml.html">More...</a></li>
+</ul>
 <!--Recommendation System-->
-<div class="ui raised segments">
-  {% for post in site.categories["Recommendation System"] limit:3 %}
-  <div class="ui segment">
-    <div class="ui items">
-      <div class="item">
-        <div class="ui tiny image">
-          <img src="{{ site.baseurl }}/static/icons/reco.png">
-        </div>
-        <div class="content">
-          <a class="header" href="{{ post.url }}">{{ post.title }}</a>
-          <div class="description">
-            <p>{{ post.excerpt }}</p>
-          </div>
-        </div>
+<ul class="list-group">
+  {% for post in site.categories["Recommendation System"] limit 3 %}
+  <li class="list-group-item">
+    <div class="media">
+      <div class="media-left">
+        <img class="media-object" src="{{ site.url }}/static/icons/reco.png" >
+      </div>
+      <div class="media-body">
+        <a href="{{ post.url }}"><h4 class="media-heading">{{ post.title }}</h4></a>
+        {{ post.excerpt }}
       </div>
     </div>
-  </div>
+  </li>
   {% endfor %}
-  <div class="ui segment">
-    <p><a href="{{ site.url }}/recosys.html">More...</a></p>
-  </div>
-</div>
+  <li class="list-group-item"><a href="{{ site.url }}/recosys.html">More...</a></li>
+</ul>
 <!--Structure-->
-<div class="ui raised segments">
-  {% for post in site.categories["Structure"] limit:3 %}
-  <div class="ui segment">
-    <div class="ui items">
-      <div class="item">
-        <div class="ui tiny image">
-          <img src="{{ site.baseurl }}/static/icons/struct.png">
-        </div>
-        <div class="content">
-          <a class="header" href="{{ post.url }}">{{ post.title }}</a>
-          <div class="description">
-            <p>{{ post.excerpt }}</p>
-          </div>
-        </div>
+<ul class="list-group">
+  {% for post in site.categories["Structure"] limit 3 %}
+  <li class="list-group-item">
+    <div class="media">
+      <div class="media-left">
+        <img class="media-object" src="{{ site.url }}/static/icons/struct.png" >
+      </div>
+      <div class="media-body">
+        <a href="{{ post.url }}"><h4 class="media-heading">{{ post.title }}</h4></a>
+        {{ post.excerpt }}
       </div>
     </div>
-  </div>
+  </li>
   {% endfor %}
-  <div class="ui segment">
-    <p><a href="{{ site.url }}/structure.html">More...</a></p>
-  </div>
-</div>
+  <li class="list-group-item"><a href="{{ site.url }}/structure.html">More...</a></li>
+</ul>

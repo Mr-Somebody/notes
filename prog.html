@@ -3,8 +3,8 @@ layout: default
 title: Blog
 ---
 <ol class="breadcrumb">
-  <li><a href="{{ post.url }}">Home</a></li>
-  <li><a href="{{ site.url }}/prog.html">Programming</a></li>
+  <li><a href="{{ site.url }}">Home</a></li>
+  <li><a href="{{ page.url }}">Programming</a></li>
 </ol>
 <!--Programming-->
 <ul class="list-group">
@@ -12,7 +12,7 @@ title: Blog
   <li class="list-group-item">
     <div class="media">
       <div class="media-left">
-        <img class="media-object" src="{{ site.baseurl }}/static/icons/prog.png" >
+        <img class="media-object" src="{{ site.url }}/static/icons/prog.png" >
       </div>
       <div class="media-body">
         <a href="{{ post.url }}"><h4 class="media-heading">{{ post.title }}</h4></a>

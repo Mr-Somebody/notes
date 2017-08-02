@@ -2,28 +2,23 @@
 layout: default
 title: Blog
 ---
-<div class="ui breadcrumb">
-  <a class="section">Home</a>
-  <i class="right chevron icon divider"></i>
-  <a class="section">Structure</a>
-</div>
-<!--Structure-->
-<div class="ui raised segments">
+<ol class="breadcrumb">
+  <li><a href="{{ site.url }}">Home</a></li>
+  <li><a href="{{ page.url }}">Structure</a></li>
+</ol>
+<!--Programming-->
+<ul class="list-group">
   {% for post in site.categories["Structure"] %}
-  <div class="ui segment">
-    <div class="ui items">
-      <div class="item">
-        <div class="ui tiny image">
-          <img src="{{ site.baseurl }}/static/icons/struct.png">
-        </div>
-        <div class="content">
-          <a class="header" href="{{ post.url }}">{{ post.title }}</a>
-          <div class="description">
-            <p>{{ post.excerpt }}</p>
-          </div>
-        </div>
+  <li class="list-group-item">
+    <div class="media">
+      <div class="media-left">
+        <img class="media-object" src="{{ site.url }}/static/icons/struct.png" >
+      </div>
+      <div class="media-body">
+        <a href="{{ post.url }}"><h4 class="media-heading">{{ post.title }}</h4></a>
+        {{ post.excerpt }}
       </div>
     </div>
-  </div>
+  </li>
   {% endfor %}
-</div>
+</ul>

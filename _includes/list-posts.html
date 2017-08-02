@@ -1,5 +1,5 @@
 <ul class="list-group">
-  {% for post in include.posts limit 3%}
+  {% for post in include.posts limit include.limit %}
   <li class="list-group-item">
     <div class="media">
       <div class="media-left">
@@ -12,7 +12,7 @@
     </div>
   </li>
   {% endfor %}
-  {% if true %}
+  {% if include.more %}
   <li class="list-group-item">
     <p><a href="{{ site.url }}/prog.html">More...</a></p>
   </li>

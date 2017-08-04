@@ -30,17 +30,29 @@
     -->
     {% include navbar.html %}
 
-    <section class="main-content" style="padding-top: 20px;">
-      <ol class="breadcrumb">
-        <li><a href="{{ site.url }}">Home</a></li>
-        <li><a href="">{{ page.categories }}</a></li>
-        <li><a href="">{{ page.title }}</a></li>
-      </ol>
-      {{ content }}
-
-      {% include comment.html %}
-      {% include footer.html %}
-    </section>
+    <div class="row" style="padding-top: 20px">
+      <div class="col-md-2"></div>
+      <div class="col-md-8 col-sm-12">
+        <ol class="breadcrumb">
+          <li><a href="{{ site.baseurl }}">Home</a></li>
+          {% assign catg_url="" %}
+          {% for catg in site.data.catgs %}
+            {% if catg.name == page.categories[0] %}
+              {% assign catg_url=catg.url %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+          <li><a href="{{ catg_url }}">{{ page.categories }}</a></li>
+          <li><a href="">{{ page.title }}</a></li>
+        </ol>
+        <div class="well">
+          {{ content }}
+        </div>
+        {% include comment.html %}
+        {% include footer.html %}
+      </div>
+      <div class="col-md-2"></div>
+    </div>
 
     {% include analysis.html %}
   </body>

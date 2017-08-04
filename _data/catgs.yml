@@ -1,0 +1,12 @@
+- name: Machine Learning
+  url: /ml.html
+- name: Programming
+  url: /prog.html
+- name: Mathematics
+  url: /math.html
+- name: Algorithms
+  url: /algo.html
+- name: Recommendation System
+  url: /recosys.html
+- name: Structure
+  url: /structure.html

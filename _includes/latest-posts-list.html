@@ -1,0 +1,14 @@
+<ul class="list-group">
+  {% for post in site.posts limit: 8 %}
+  <li class="list-group-item">
+    <div class="media">
+      <div class="media-left">
+        <img class="media-object" src="{{ site.url }}/static/icons/prog.png" >
+      </div>
+      <div class="media-body">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </div>
+    </div>
+  </li>
+  {% endfor %}
+</ul>

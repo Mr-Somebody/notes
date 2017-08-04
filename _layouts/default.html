@@ -31,12 +31,23 @@
     -->
     {% include navbar.html %}
 
-    <section class="main-content" style="padding-top: 20px;">
-      {{ content }}
-
-      {% include comment.html %}
-      {% include footer.html %}
-    </section>
+    <div class="row" style="padding-top: 20px">
+      <div class="col-md-2"></div>
+      <div class="col-md-8 col-sm-12">
+        <div class="row">
+          <div class="col-md-8 col-sm-12">
+            {{ content }}
+          </div>
+          <div class="col-md-3 hidden-sm hidden-xs">
+            {% include list-page-info.html %}
+            {% include latest-posts-list.html %}
+          </div>
+        </div>
+        {% include comment.html %}
+        {% include footer.html %}
+      </div>
+      <div class="col-md-2"></div>
+    </div>
 
     {% include analysis.html %}
   </body>

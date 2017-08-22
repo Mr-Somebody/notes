@@ -3,6 +3,7 @@ title: First Missing Positive
 category: Programming
 comments: true
 excerpt_separator: <!--more-->
+date: 2017-08-17 17:00:00
 layout: post
 ---
 Given an unsorted integer array, find the first missing positive integer.
@@ -17,7 +18,7 @@ Your algorithm should run in O(n) time and uses constant space.
 [Leetcode Link](https://leetcode.com/problems/first-missing-positive)
 
 ## Methodology
-The trick is to put every positive number into the right position, at where A[pos] = pos. Then traverse the array again to find the first missing integer. 
+The trick is to put every positive number into the right position, at where A[pos] = pos. Then traverse the array again to find the first missing integer.
 
 ## Source Code
 ```C++

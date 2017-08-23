@@ -9,13 +9,15 @@ title: Blog
 <!--Programming-->
 <ul class="list-group">
   {% for post in site.categories["Recommendation System"] %}
+  {% assign parray = post.url | split: "/" | reverse %}
+  {% assign post_date = parray[3] | append: "-" | append: parray[2] | append: "-" | append: parray[1] %}
   <li class="list-group-item">
     <div class="media">
       <div class="media-left">
         <img class="media-object" src="{{ site.url }}/static/icons/reco.png" >
       </div>
       <div class="media-body">
-        <a href="{{ post.url }}"><h4 class="media-heading">{{ post.title }}</h4></a>
+        <a href="{{ post.url }}"><h4 class="media-heading">{{ post.title }}<span class="label label-default pull-right">{{ post_date }}</span></h4></a>
         {{ post.excerpt }}
       </div>
     </div>

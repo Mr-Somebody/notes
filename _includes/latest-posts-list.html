@@ -3,7 +3,14 @@
   <li class="list-group-item">
     <div class="media">
       <div class="media-left">
-        <img class="media-object" src="{{ site.url }}/static/icons/prog.png" >
+        {% assign image_url="" %}
+        {% for catg in site.data.catgs %}
+          {% if catg.name == post.categories[0] %}
+            {% assign image_url=catg.image %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+        <img class="media-object" src="{{ site.url }}{{ image_url }}" >
       </div>
       <div class="media-body">
         <a href="{{ post.url }}">{{ post.title }}</a>

@@ -1,12 +1,18 @@
 - name: Machine Learning
   url: /ml.html
+  image: /static/icons/ml.png
 - name: Programming
   url: /prog.html
+  image: /static/icons/prog.png
 - name: Mathematics
   url: /math.html
+  image: /static/icons/math.png
 - name: Algorithms
   url: /algo.html
+  image: /static/icons/algo.png
 - name: Recommendation System
   url: /recosys.html
+  image: /static/icons/reco.png
 - name: Structure
   url: /structure.html
+  image: /static/icons/struct.png

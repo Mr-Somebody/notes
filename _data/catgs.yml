@@ -16,3 +16,6 @@
 - name: Structure
   url: /structure.html
   image: /static/icons/struct.png
+- name: others
+  url: /others.html
+  image: /static/icons/others.png

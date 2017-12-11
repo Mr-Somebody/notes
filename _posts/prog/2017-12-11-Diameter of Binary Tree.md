@@ -5,7 +5,7 @@ comments: true
 excerpt_separator: <!--more-->
 date: 2017-12-11 16:00:00
 layout: post
-tags: [dp, palindrome, dynamic programming]
+tags: [binary, tree, longest path, diameter]
 ---
 Given a binary tree, you need to compute the length of the diameter of the tree. The diameter of a binary tree is the length of the longest path between any two nodes in a tree. This path may or may not pass through the root.
 

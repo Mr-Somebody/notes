@@ -22,6 +22,3 @@
 - name: tools
   url: /tools.html
   image: /static/icons/tools.png
-- name: others
-  url: /others.html
-  image: /static/icons/others.png

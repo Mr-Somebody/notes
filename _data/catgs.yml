@@ -16,9 +16,9 @@
 - name: Structure
   url: /structure.html
   image: /static/icons/struct.png
-- name: python
-  url: /python.html
-  image: /static/icons/python.png
+- name: PL
+  url: /pl.html
+  image: /static/icons/pl.png
 - name: tools
   url: /tools.html
   image: /static/icons/tools.png

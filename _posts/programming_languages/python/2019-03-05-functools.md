@@ -1,6 +1,6 @@
 ---
 title: python functools library
-category: python
+category: PL
 comments: true
 excerpt_separator: <!--more-->
 layout: post

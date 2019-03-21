@@ -19,6 +19,9 @@
 - name: python
   url: /python.html
   image: /static/icons/python.png
+- name: tools
+  url: /tools.html
+  image: /static/icons/tools.png
 - name: others
   url: /others.html
   image: /static/icons/others.png

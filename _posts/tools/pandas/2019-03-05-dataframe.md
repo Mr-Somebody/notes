@@ -1,6 +1,8 @@
 ---
 title: Pandas DataFrame Operations
-category: tools, pandas
+category:
+  - tools
+  - pandas
 comments: true
 excerpt_separator: <!--more-->
 layout: post

@@ -41,6 +41,7 @@ Class Test {
   public static void main(String []args) {
     A a = new A();
     Field field = A.class.getDeclaredField("key");
+    field.setAccessible(true);
     TestAnnotation annotation = field.getDeclaredAnnotation(TestAnnotation.class);
     field.set(a, String.format("%s-%d", annotation.name(), annotation.id()));
   }

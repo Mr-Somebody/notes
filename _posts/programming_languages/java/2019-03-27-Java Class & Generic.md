@@ -61,4 +61,4 @@ int[].class == Class.forName("[I") // "I" is class name for int ("D" is class na
 
 ### References
 1. [how to get a array class using classloader in java?](https://stackoverflow.com/questions/20738207/how-to-get-a-array-class-using-classloader-in-java)
-2. [How to convert List<T> to Array t\[\] (for primitive types) using generic-method?](https://stackoverflow.com/questions/25149412/how-to-convert-listt-to-array-t-for-primitive-types-using-generic-method)
+2. [How to convert List<T> to Array t\\[\\] (for primitive types) using generic-method?](https://stackoverflow.com/questions/25149412/how-to-convert-listt-to-array-t-for-primitive-types-using-generic-method)

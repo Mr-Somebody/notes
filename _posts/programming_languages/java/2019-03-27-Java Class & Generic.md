@@ -56,3 +56,7 @@ The only difference is that for non-primitive types, a prefix *"[L"* is added th
 String[].class == Class.forName("[Ljava.lang.String")
 int[].class == Class.forName("[I") // "I" is class name for int ("D" is class name for double, etc. You can you X.class.getName() to view others)
 ```
+
+### References
+1. [how to get a array class using classloader in java?](https://stackoverflow.com/questions/20738207/how-to-get-a-array-class-using-classloader-in-java)
+2. [How to convert List<T> to Array t[] (for primitive types) using generic-method?](https://stackoverflow.com/questions/25149412/how-to-convert-listt-to-array-t-for-primitive-types-using-generic-method)

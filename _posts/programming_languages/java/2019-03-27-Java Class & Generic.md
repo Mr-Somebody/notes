@@ -12,6 +12,7 @@ Here's some Java Class & Generic related tricks:
 2. Create an array of a primitive type
 3. Getting array class type of a class type
 <!--more-->
+
 ### Create an array
 To create an array of generic type, we need to use java.lang.reflect.Array.newInstance() method to create the array.
 ```Java
@@ -40,6 +41,7 @@ public <T> T createArray(Class<T> cls, int size) {
 }
 int[] arr = createArray(int[].class, 10);
 ```
+
 ### Getting array class type of a class type
 Sometimes, we only know the name of the class, such "A", we need to get the Class of "A[].class". If we have the direct reference of Class A, that would not be problem, but what if not? Here is the solution:
 1. Class A is not a primitive type:
